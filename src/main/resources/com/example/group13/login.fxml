@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.LoginController">
+   <children>
+      <TextField layoutX="182.0" layoutY="130.0" prefHeight="35.0" prefWidth="210.0" text="User Name" />
+      <ComboBox layoutX="182.0" layoutY="237.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button layoutX="229.0" layoutY="297.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="127.0" text="Login" />
+      <Label layoutX="106.0" layoutY="130.0" prefHeight="35.0" prefWidth="65.0" text="User Name :" />
+      <PasswordField layoutX="182.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="106.0" layoutY="176.0" prefHeight="35.0" prefWidth="65.0" text="Password :" />
+      <Label layoutX="109.0" layoutY="241.0" prefHeight="17.0" prefWidth="59.0" text="User Type :" />
+   </children>
+</AnchorPane>
