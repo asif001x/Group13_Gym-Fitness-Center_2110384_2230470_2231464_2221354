@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group13.rafi2231464.Goalfour"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="com.example.group13.rafi2231464.U5dashboard"
+            prefHeight="400.0" prefWidth="600.0" >
 
 </AnchorPane>
