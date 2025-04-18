@@ -6,15 +6,22 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.LoginController">
    <children>
-      <TextField layoutX="182.0" layoutY="130.0" prefHeight="35.0" prefWidth="210.0" text="User Name" />
+      <TextField fx:id="useridTextField" layoutX="182.0" layoutY="130.0" prefHeight="35.0" prefWidth="210.0" text="User Name" />
       <ComboBox layoutX="182.0" layoutY="237.0" prefHeight="25.0" prefWidth="210.0" />
-      <Button layoutX="229.0" layoutY="297.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="127.0" text="Login" />
+      <Button layoutX="223.0" layoutY="286.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="47.0" prefWidth="127.0" text="Login" />
       <Label layoutX="106.0" layoutY="130.0" prefHeight="35.0" prefWidth="65.0" text="User Name :" />
-      <PasswordField layoutX="182.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="182.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" />
       <Label layoutX="106.0" layoutY="176.0" prefHeight="35.0" prefWidth="65.0" text="Password :" />
       <Label layoutX="109.0" layoutY="241.0" prefHeight="17.0" prefWidth="59.0" text="User Type :" />
+      <Label layoutX="242.0" layoutY="29.0" text="Log In" textFill="#1cd6cd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="435.0" layoutY="322.0" mnemonicParsing="false" onAction="#createaccountOnAction" prefHeight="35.0" prefWidth="127.0" text="Create Account" />
    </children>
 </AnchorPane>
