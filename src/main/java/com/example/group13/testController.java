@@ -1,9 +1,9 @@
-package com.example.group13.asifur2110384;
+package com.example.group13;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
-public class HiringprotionuserController
+public class testController
 {
     @javafx.fxml.FXML
     private Label outputLabel;
