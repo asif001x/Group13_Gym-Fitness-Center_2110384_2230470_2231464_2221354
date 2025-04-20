@@ -5,10 +5,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.asifur2110384.ClassschedulingController">
    <children>
@@ -23,15 +23,17 @@
          </font>
       </Label>
       <Label layoutX="23.0" layoutY="85.0" prefHeight="22.0" prefWidth="153.0" text="Create Class Schedule :" />
-      <TableView layoutY="243.0" prefHeight="161.0" prefWidth="603.0">
+      <TableView fx:id="addTableView" layoutY="243.0" prefHeight="161.0" prefWidth="603.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
-      <TextField fx:id="addtimeTextField" layoutX="168.0" layoutY="83.0" promptText="Time" />
+      <TextField fx:id="addtimeTextField" layoutX="191.0" layoutY="83.0" promptText="Time" />
       <Label layoutX="23.0" layoutY="127.0" prefHeight="22.0" prefWidth="138.0" text="Class registrations :" />
-      <ComboBox fx:id="addregComboBox" layoutX="169.0" layoutY="124.0" prefWidth="150.0" promptText="Select" />
-      <Label layoutX="34.0" layoutY="176.0" text="Label" />
+      <ComboBox fx:id="addregComboBox" layoutX="192.0" layoutY="124.0" prefWidth="150.0" promptText="Select" />
+      <Label layoutX="26.0" layoutY="174.0" text="Select Room Number :" />
+      <ComboBox layoutX="192.0" layoutY="169.0" onAction="#roomnumberOnAction" prefWidth="150.0" promptText="Select" />
+      <TextArea fx:id="outputTextArea" layoutX="382.0" layoutY="95.0" prefHeight="114.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
