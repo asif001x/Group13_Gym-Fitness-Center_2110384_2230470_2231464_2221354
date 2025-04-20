@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 public class LoginController
 {
     @javafx.fxml.FXML
-    private ComboBox typeComboBox;
+    private ComboBox<String> typeComboBox;
     @javafx.fxml.FXML
     private PasswordField passwordPasswordField;
     @javafx.fxml.FXML
@@ -16,6 +16,7 @@ public class LoginController
 
     @javafx.fxml.FXML
     public void initialize() {
+        typeComboBox.getItems().setAll("Manager","Maintenance Officer","Member");
     }
 
     @javafx.fxml.FXML
