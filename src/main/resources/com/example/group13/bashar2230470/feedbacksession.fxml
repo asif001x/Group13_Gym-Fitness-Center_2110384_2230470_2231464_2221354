@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.FeedbacksessionController">
    <children>
       <Label alignment="CENTER" layoutX="199.0" layoutY="39.0" prefHeight="30.0" prefWidth="220.0" text="Feedback Session">
@@ -20,18 +19,23 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <ComboBox layoutX="209.0" layoutY="116.0" prefHeight="26.0" prefWidth="250.0" />
+      <ComboBox fx:id="sessionComboBox" layoutX="209.0" layoutY="116.0" prefHeight="26.0" prefWidth="250.0" promptText="Select Session" />
       <Label layoutX="108.0" layoutY="231.0" prefHeight="18.0" prefWidth="75.0" text="Feedback :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextArea layoutX="211.0" layoutY="165.0" prefHeight="154.0" prefWidth="250.0" />
-      <Button layoutX="259.0" layoutY="350.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" text="Submit">
+      <TextArea fx:id="feedbackTextArea" layoutX="211.0" layoutY="165.0" prefHeight="154.0" prefWidth="250.0" promptText="Text" />
+      <Button layoutX="259.0" layoutY="350.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="31.0" prefWidth="125.0" text="Submit">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Label layoutX="191.0" layoutY="421.0" prefHeight="18.0" prefWidth="240.0" text="Label" />
+      <Label layoutX="191.0" layoutY="421.0" prefHeight="18.0" prefWidth="240.0" />
+      <Button layoutX="36.0" layoutY="39.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.UpcomingscheduleController">
    <children>
       <Label alignment="CENTER" layoutX="174.0" layoutY="27.0" prefHeight="18.0" prefWidth="238.0" text="Upcoming Schedule">
@@ -20,10 +19,15 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <DatePicker layoutX="167.0" layoutY="94.0" prefHeight="26.0" prefWidth="238.0" />
-      <ListView layoutX="122.0" layoutY="206.0" prefHeight="163.0" prefWidth="362.0" />
-      <Label layoutX="269.0" layoutY="398.0" prefHeight="18.0" prefWidth="142.0" text="Label" />
-      <Button layoutX="215.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Assigned Session">
+      <DatePicker fx:id="dateDatePicker" layoutX="167.0" layoutY="94.0" prefHeight="26.0" prefWidth="238.0" />
+      <ListView fx:id="listListView" layoutX="122.0" layoutY="206.0" prefHeight="163.0" prefWidth="362.0" />
+      <Label layoutX="269.0" layoutY="398.0" prefHeight="18.0" prefWidth="142.0" />
+      <Button layoutX="215.0" layoutY="149.0" mnemonicParsing="false" onAction="#assignedsessionOnAction" prefHeight="26.0" prefWidth="142.0" text="Assigned Session">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="30.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
          <font>
             <Font size="15.0" />
          </font>

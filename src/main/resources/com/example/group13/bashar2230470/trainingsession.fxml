@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="589.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.TrainingsessionController">
    <children>
       <Label alignment="CENTER" layoutX="171.0" layoutY="30.0" prefHeight="18.0" prefWidth="257.0" text="Schedule training sessions">
@@ -17,7 +16,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="223.0" layoutY="84.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="141.0" text="Schedule Session">
+      <Button layoutX="223.0" layoutY="84.0" mnemonicParsing="false" onAction="#schedulesessionButton" prefHeight="26.0" prefWidth="141.0" text="Schedule Session">
          <font>
             <Font size="15.0" />
          </font>
@@ -37,14 +36,19 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="271.0" layoutY="510.0" mnemonicParsing="false" text="Save Session">
+      <Button layoutX="271.0" layoutY="510.0" mnemonicParsing="false" onAction="#savesessionOnAction" text="Save Session">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <DatePicker layoutX="213.0" layoutY="141.0" prefHeight="26.0" prefWidth="221.0" />
-      <ComboBox layoutX="212.0" layoutY="186.0" prefHeight="26.0" prefWidth="228.0" />
-      <TextField layoutX="212.0" layoutY="224.0" prefHeight="26.0" prefWidth="228.0" />
-      <TextArea layoutX="125.0" layoutY="268.0" prefHeight="200.0" prefWidth="357.0" />
+      <DatePicker fx:id="sessiondateDatePicker" layoutX="213.0" layoutY="141.0" prefHeight="26.0" prefWidth="221.0" promptText="Select Date" />
+      <ComboBox fx:id="sessiontimeComboBox" layoutX="212.0" layoutY="186.0" prefHeight="26.0" prefWidth="228.0" promptText="Select Time" />
+      <TextField fx:id="memberidTextField" layoutX="212.0" layoutY="224.0" prefHeight="26.0" prefWidth="228.0" />
+      <TextArea fx:id="textTextArea" layoutX="125.0" layoutY="268.0" prefHeight="200.0" prefWidth="357.0" promptText="Text" />
+      <Button layoutX="42.0" layoutY="33.0" mnemonicParsing="false" onAction="#backOnAction" text="back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

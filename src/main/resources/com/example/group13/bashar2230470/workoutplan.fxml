@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="582.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.WorkoutplanController">
    <children>
       <Label alignment="CENTER" layoutX="168.0" layoutY="37.0" prefHeight="18.0" prefWidth="240.0" text="Assign workout plan">
@@ -16,20 +15,20 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <ComboBox layoutX="204.0" layoutY="110.0" prefHeight="26.0" prefWidth="234.0" />
+      <ComboBox fx:id="memberidComboBox" layoutX="204.0" layoutY="110.0" prefHeight="26.0" prefWidth="234.0" promptText="Select ID" />
       <Label layoutX="88.0" layoutY="114.0" prefHeight="22.0" prefWidth="100.0" text="Member Id :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextArea layoutX="128.0" layoutY="159.0" prefHeight="200.0" prefWidth="340.0" />
-      <Button layoutX="272.0" layoutY="519.0" mnemonicParsing="false" text="Save Plan">
+      <TextArea fx:id="textTextArea" layoutX="128.0" layoutY="159.0" prefHeight="200.0" prefWidth="340.0" promptText="Text" />
+      <Button layoutX="272.0" layoutY="519.0" mnemonicParsing="false" onAction="#saveplanOnAction" text="Save Plan">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <DatePicker layoutX="237.0" layoutY="400.0" prefHeight="26.0" prefWidth="212.0" />
-      <DatePicker layoutX="237.0" layoutY="448.0" prefHeight="26.0" prefWidth="212.0" />
+      <DatePicker fx:id="startdateDatePicker" layoutX="237.0" layoutY="400.0" prefHeight="26.0" prefWidth="212.0" promptText="Select Date" />
+      <DatePicker fx:id="enddateDatePicker" layoutX="237.0" layoutY="448.0" prefHeight="26.0" prefWidth="212.0" promptText="Select Date" />
       <Label layoutX="145.0" layoutY="404.0" prefHeight="22.0" prefWidth="85.0" text="Start Date :">
          <font>
             <Font size="15.0" />
@@ -40,5 +39,10 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button layoutX="45.0" layoutY="37.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
