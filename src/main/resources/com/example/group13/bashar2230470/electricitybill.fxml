@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.electricitybill">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.electricitybillController">
    <children>
       <Label alignment="CENTER" layoutX="203.0" layoutY="47.0" prefHeight="30.0" prefWidth="203.0" text="Add Electricity Bill">
          <font>

@@ -1,6 +1,6 @@
 package com.example.group13.bashar2230470;
 
-public class Communicatewithmembers
+public class MonthlyexpensesController
 {
     @javafx.fxml.FXML
     public void initialize() {
