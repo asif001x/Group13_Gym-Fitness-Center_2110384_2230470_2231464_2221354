@@ -11,7 +11,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.LoginController">
    <children>
       <TextField fx:id="useridTextField" layoutX="182.0" layoutY="130.0" prefHeight="35.0" prefWidth="210.0" promptText="User Name" />
-      <ComboBox layoutX="182.0" layoutY="237.0" prefHeight="25.0" prefWidth="210.0" promptText="Select Type" />
+      <ComboBox fx:id="typeComboBox" layoutX="182.0" layoutY="237.0" prefHeight="25.0" prefWidth="210.0" promptText="Select Type" />
       <Button layoutX="207.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="35.0" prefWidth="143.0" text="Login" />
       <Label layoutX="106.0" layoutY="130.0" prefHeight="35.0" prefWidth="65.0" text="User Name :" />
       <PasswordField fx:id="passwordPasswordField" layoutX="182.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" promptText="User Password" />
