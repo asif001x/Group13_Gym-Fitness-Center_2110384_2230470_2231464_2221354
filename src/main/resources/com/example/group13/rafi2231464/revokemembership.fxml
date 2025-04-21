@@ -7,21 +7,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Revokemembership">
    <children>
-      <TableView layoutX="77.0" layoutY="173.0" prefHeight="200.0" prefWidth="388.0">
+      <TableView fx:id="tableviewFX" layoutX="77.0" layoutY="173.0" prefHeight="200.0" prefWidth="388.0">
         <columns>
-          <TableColumn prefWidth="184.00003051757812" text="Name" />
-          <TableColumn prefWidth="108.6666259765625" text="ID" />
-            <TableColumn prefWidth="75.0" text="Status" />
+          <TableColumn fx:id="nameTBC" prefWidth="184.00003051757812" text="Name" />
+          <TableColumn fx:id="idTBC" prefWidth="108.6666259765625" text="ID" />
+            <TableColumn fx:id="statusTBC" prefWidth="75.0" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="492.0" layoutY="329.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="73.0" text="Back" />
-      <TextField layoutX="188.0" layoutY="45.0" />
-      <TextField layoutX="188.0" layoutY="90.0" />
-      <Button layoutX="406.0" layoutY="70.0" mnemonicParsing="false" onAction="#revokeOA" text="Revoke" />
+      <Button fx:id="backButton" layoutX="492.0" layoutY="329.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="73.0" text="Back" />
+      <TextField fx:id="memberNameTF" layoutX="188.0" layoutY="45.0" />
+      <TextField fx:id="memberIDTF" layoutX="188.0" layoutY="90.0" />
+      <Button fx:id="removeStatusButton" layoutX="406.0" layoutY="70.0" mnemonicParsing="false" onAction="#revokeOA" text="Revoke" />
       <Label layoutX="77.0" layoutY="94.0" prefHeight="17.0" prefWidth="63.0" text="Member ID" />
       <Label layoutX="77.0" layoutY="49.0" text="Member Name" />
+      <Button fx:id="saveButton" layoutX="492.0" layoutY="70.0" mnemonicParsing="false" onAction="#saveOA" prefHeight="25.0" prefWidth="55.0" text="Save" />
    </children>
 </AnchorPane>

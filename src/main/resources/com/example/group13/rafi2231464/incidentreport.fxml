@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Incidentreport">
    <children>
       <TextArea layoutX="100.0" layoutY="100.0" prefHeight="200.0" prefWidth="381.0" />
@@ -17,5 +16,6 @@
       </Label>
       <Button layoutX="107.0" layoutY="325.0" mnemonicParsing="false" text="Submit" />
       <Button layoutX="417.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Back" />
+      <Button layoutX="265.0" layoutY="325.0" mnemonicParsing="false" text="Delete" />
    </children>
 </AnchorPane>

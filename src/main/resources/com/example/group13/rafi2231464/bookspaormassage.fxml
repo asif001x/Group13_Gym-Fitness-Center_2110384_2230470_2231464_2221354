@@ -4,10 +4,11 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Bookspaormassage">
    <children>
@@ -16,12 +17,21 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="79.0" layoutY="77.0" promptText="Name" />
-      <TextField layoutX="254.0" layoutY="77.0" promptText="Phone" />
-      <ComboBox layoutX="286.0" layoutY="122.0" prefWidth="150.0" promptText="Time" />
-      <DatePicker layoutX="79.0" layoutY="122.0" promptText="Day" />
-      <Button layoutX="254.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Book Now" />
-      <ComboBox layoutX="436.0" layoutY="77.0" prefWidth="150.0" promptText="Spa/Massage" />
-      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Back" />
+      <TextField fx:id="nameTF" layoutX="79.0" layoutY="77.0" promptText="Name" />
+      <TextField fx:id="phoneTF" layoutX="254.0" layoutY="77.0" promptText="Phone" />
+      <ComboBox fx:id="timeCB" layoutX="286.0" layoutY="122.0" prefWidth="150.0" promptText="Time" />
+      <DatePicker fx:id="datepickerTF" layoutX="79.0" layoutY="122.0" promptText="Date" />
+      <Button fx:id="bookNowButton" layoutX="254.0" layoutY="162.0" mnemonicParsing="false" onAction="#bookNowTF" prefHeight="25.0" prefWidth="135.0" text="Book Now" />
+      <ComboBox fx:id="typeCB" layoutX="436.0" layoutY="77.0" prefWidth="150.0" promptText="Spa/Massage" />
+      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="54.0" text="Back" />
+      <TableView fx:id="tableviewFX" layoutY="199.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nameTBC" prefWidth="124.66665649414062" text="Name" />
+          <TableColumn fx:id="phoneTBC" prefWidth="116.0" text="Phone" />
+            <TableColumn fx:id="typeTBC" minWidth="0.0" prefWidth="124.0" text="Spa/Massage" />
+            <TableColumn fx:id="dateTBC" minWidth="0.0" prefWidth="136.6666259765625" text="Date" />
+            <TableColumn fx:id="timeTBC" minWidth="0.0" prefWidth="98.6666259765625" text="Time" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.U5dashboard">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.U5dashboard">
    <children>
       <Button layoutX="218.0" layoutY="187.0" mnemonicParsing="false" onAction="#markEquipmentMaintenanceOA" text="Mark Equipment Maintenance" />
       <Button layoutX="61.0" layoutY="293.0" mnemonicParsing="false" onAction="#evacuationPlansOA" prefHeight="25.0" prefWidth="124.0" text="Evacuation Plans" />

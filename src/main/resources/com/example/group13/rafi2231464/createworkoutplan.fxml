@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Createworkoutplan">
    <children>
       <Label layoutX="217.0" layoutY="29.0" text="Create Workout Plan">
@@ -17,20 +16,20 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="38.0" layoutY="74.0" promptText="Workout Plan Name" />
-      <ComboBox layoutX="234.0" layoutY="74.0" prefWidth="150.0" promptText="Exercise Categories" />
-      <TextField layoutX="38.0" layoutY="121.0" promptText="Setting Duration" />
-      <ComboBox layoutX="234.0" layoutY="121.0" prefWidth="150.0" promptText="Specific Exercises" />
-      <TableView layoutX="13.0" layoutY="168.0" prefHeight="200.0" prefWidth="579.0">
+      <TextField fx:id="workoutPlanNameTF" layoutX="38.0" layoutY="74.0" promptText="Workout Plan Name" />
+      <ComboBox fx:id="exerciseCategoriesCB" layoutX="234.0" layoutY="74.0" prefWidth="150.0" promptText="Exercise Categories" />
+      <TextField fx:id="settingDurationTF" layoutX="38.0" layoutY="121.0" promptText="Setting Duration" />
+      <ComboBox fx:id="specificExcercisesCB" layoutX="234.0" layoutY="121.0" prefWidth="150.0" promptText="Specific Exercises" />
+      <TableView fx:id="tableViewFX" layoutX="13.0" layoutY="168.0" prefHeight="200.0" prefWidth="579.0">
         <columns>
-          <TableColumn prefWidth="158.00003051757812" text="Work Plan Name" />
-          <TableColumn prefWidth="144.6666259765625" text="Setting Duration" />
-            <TableColumn prefWidth="142.6666259765625" text="Excercise Category" />
-            <TableColumn prefWidth="134.0" text="Specific Exercise" />
+          <TableColumn fx:id="workPlanNameTBC" prefWidth="158.00003051757812" text="Work Plan Name" />
+          <TableColumn fx:id="settingDurationTBC" prefWidth="144.6666259765625" text="Setting Duration" />
+            <TableColumn fx:id="exerciseCategoryTBC" prefWidth="142.6666259765625" text="Excercise Category" />
+            <TableColumn fx:id="specificExerciseTBC" prefWidth="134.0" text="Specific Exercise" />
         </columns>
       </TableView>
-      <Button layoutX="434.0" layoutY="74.0" mnemonicParsing="false" text="Save Plan" />
-      <Button layoutX="434.0" layoutY="121.0" mnemonicParsing="false" text="Delete Plan" />
-      <Button layoutX="38.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Back" />
+      <Button fx:id="saveButton" layoutX="434.0" layoutY="74.0" mnemonicParsing="false" onAction="#savePlanOA" text="Save Plan" />
+      <Button fx:id="deleteButton" layoutX="434.0" layoutY="121.0" mnemonicParsing="false" onAction="#deletePlanOA" text="Delete Plan" />
+      <Button fx:id="backButton" layoutX="38.0" layoutY="16.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="67.0" text="Back" />
    </children>
 </AnchorPane>

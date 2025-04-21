@@ -10,19 +10,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Signupgymcompetitions">
+<AnchorPane prefHeight="419.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Signupgymcompetitions">
    <children>
-      <TextField layoutX="103.0" layoutY="73.0" promptText="Name" />
-      <TextField layoutX="103.0" layoutY="116.0" promptText="Phone" />
-      <DatePicker layoutX="300.0" layoutY="73.0" promptText="Competition Date" />
-      <ComboBox layoutX="299.0" layoutY="116.0" prefHeight="25.0" prefWidth="175.0" promptText="Competition Name" />
-      <Button layoutX="255.0" layoutY="161.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="51.0" layoutY="22.0" mnemonicParsing="false" text="Back" />
-      <TableView layoutX="55.0" layoutY="200.0" prefHeight="200.0" prefWidth="488.0">
+      <TextField fx:id="nameTF" layoutX="103.0" layoutY="73.0" promptText="Name" />
+      <TextField fx:id="phoneTF" layoutX="103.0" layoutY="116.0" promptText="Phone" />
+      <DatePicker fx:id="competitionDP" layoutX="300.0" layoutY="73.0" promptText="Competition Date" />
+      <ComboBox fx:id="competitionNameCB" layoutX="299.0" layoutY="116.0" onAction="#competitionNameCBOA" prefHeight="25.0" prefWidth="175.0" promptText="Competition Name" />
+      <Button fx:id="submitButton" layoutX="255.0" layoutY="161.0" mnemonicParsing="false" onAction="#submitOA" text="Submit" />
+      <Button fx:id="backButton" layoutX="51.0" layoutY="22.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <TableView fx:id="tableviewFX" layoutY="200.0" prefHeight="200.0" prefWidth="689.0">
         <columns>
-          <TableColumn prefWidth="228.66665649414062" text="Competition Name" />
-          <TableColumn prefWidth="256.6666259765625" text="Competition Date" />
+            <TableColumn fx:id="nameTBC" prefWidth="196.66665136814117" text="Name" />
+            <TableColumn fx:id="phoneTBC" prefWidth="202.6666717529297" text="Phone" />
+          <TableColumn fx:id="competitionNameTBC" prefWidth="161.99996948242188" text="Competition Name" />
+          <TableColumn fx:id="dateTBC" prefWidth="125.333251953125" text="Date" />
         </columns>
       </TableView>
       <Label layoutX="189.0" layoutY="22.0" prefHeight="26.0" prefWidth="241.0" text="Sign up for gym competitions">
