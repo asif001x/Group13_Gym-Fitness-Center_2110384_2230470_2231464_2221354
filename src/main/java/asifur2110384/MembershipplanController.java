@@ -28,7 +28,8 @@ public class MembershipplanController
     }
 
     @javafx.fxml.FXML
-    public void loginButtonOnAction(ActionEvent actionEvent) {
+    public void loginButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("login.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

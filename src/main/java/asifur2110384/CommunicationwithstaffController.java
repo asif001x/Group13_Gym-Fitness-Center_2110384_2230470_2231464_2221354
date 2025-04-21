@@ -26,7 +26,9 @@ public class CommunicationwithstaffController
     }
 
     @javafx.fxml.FXML
-    public void logoutButtonOnAction(ActionEvent actionEvent) {
+    public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("login.fxml", actionEvent);
+
     }
 
     @javafx.fxml.FXML
