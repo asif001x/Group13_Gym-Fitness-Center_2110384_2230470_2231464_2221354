@@ -62,7 +62,6 @@ public class LoginController
                 break;
             case "Security Officer":
                 if (userId.equals("security") && password.equals("security123")) {
-                    SceneSwitcher.switchTo("rafi2231464/u5dashboard.fxml", actionEvent);
                     isAuthenticated = true;
                 }
                 break;
@@ -75,7 +74,6 @@ public class LoginController
         }
 
         if (!isAuthenticated) {
-            System.out.println("Invalid credentials for user type: " + userType);
         }
     }
 
