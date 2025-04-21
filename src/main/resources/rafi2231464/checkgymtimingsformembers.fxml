@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rafi2231464.Checkgymtimingsformembers">
+   <children>
+      <Label layoutX="220.0" layoutY="36.0" prefHeight="26.0" prefWidth="179.0" text="Gym Operating Hours">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView layoutX="135.0" layoutY="100.0" prefHeight="200.0" prefWidth="344.0">
+        <columns>
+          <TableColumn prefWidth="182.66665649414062" text="Day" />
+          <TableColumn prefWidth="163.33331298828125" text="Timings" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

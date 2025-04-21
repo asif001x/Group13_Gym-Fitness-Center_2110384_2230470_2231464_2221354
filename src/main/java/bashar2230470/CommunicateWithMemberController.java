@@ -1,11 +1,12 @@
-package bashar2230470;
+package com.example.group13.bashar2230470;
 
-import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
-public class CommunicateWithMemberController
+import java.awt.event.ActionEvent;
+
+public class CommunicatewithmembersController
 {
     @javafx.fxml.FXML
     private ComboBox userComboBox;
@@ -19,10 +20,13 @@ public class CommunicateWithMemberController
     }
 
     @javafx.fxml.FXML
-    public void backOnAction(ActionEvent actionEvent) {
+    public void sendOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void sendOnAction(ActionEvent actionEvent) {
+    public void backOnAction(ActionEvent actionEvent) {
+    }
+
+    public void sendOnAction(javafx.event.ActionEvent actionEvent) {
     }
 }
