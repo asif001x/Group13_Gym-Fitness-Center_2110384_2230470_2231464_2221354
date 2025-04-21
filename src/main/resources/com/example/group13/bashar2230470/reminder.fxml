@@ -24,22 +24,22 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="228.0" layoutY="203.0" prefHeight="26.0" prefWidth="271.0" />
-      <Button layoutX="207.0" layoutY="286.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" text="Save Reminder">
+      <TextField fx:id="typeTextField" layoutX="228.0" layoutY="203.0" prefHeight="26.0" prefWidth="271.0" promptText="Select Type" />
+      <Button layoutX="207.0" layoutY="286.0" mnemonicParsing="false" onAction="#savereminderOnAction" prefHeight="26.0" prefWidth="186.0" text="Save Reminder">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="196.0" layoutY="392.0" prefHeight="22.0" prefWidth="221.0" text="Label">
+      <Label alignment="CENTER" layoutX="196.0" layoutY="392.0" prefHeight="22.0" prefWidth="221.0">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="39.0" layoutY="37.0" mnemonicParsing="false" text="Back">
+      <Button layoutX="39.0" layoutY="37.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <DatePicker layoutX="226.0" layoutY="128.0" prefHeight="26.0" prefWidth="271.0" />
+      <DatePicker fx:id="dateDatePicker" layoutX="226.0" layoutY="128.0" prefHeight="26.0" prefWidth="271.0" promptText="Select Date" />
    </children>
 </AnchorPane>

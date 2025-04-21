@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.bashar2230470.CommunicatewithmembersController">
    <children>
       <Label alignment="CENTER" layoutX="139.0" layoutY="47.0" prefHeight="18.0" prefWidth="310.0" text="Communicate With Members">
@@ -20,18 +19,23 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <ComboBox layoutX="183.0" layoutY="128.0" prefHeight="26.0" prefWidth="244.0" />
+      <ComboBox fx:id="userComboBox" layoutX="183.0" layoutY="128.0" prefHeight="26.0" prefWidth="244.0" />
       <Label layoutX="79.0" layoutY="249.0" prefHeight="22.0" prefWidth="89.0" text="Message :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextArea layoutX="181.0" layoutY="178.0" prefHeight="142.0" prefWidth="355.0" />
-      <Button layoutX="266.0" layoutY="342.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Send">
+      <TextArea fx:id="messageTextArea" layoutX="181.0" layoutY="178.0" prefHeight="142.0" prefWidth="355.0" />
+      <Button layoutX="266.0" layoutY="342.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="31.0" prefWidth="118.0" text="Send">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Label layoutX="230.0" layoutY="409.0" prefHeight="39.0" prefWidth="218.0" text="Label" />
+      <Label fx:id="outputLabel" layoutX="230.0" layoutY="409.0" prefHeight="39.0" prefWidth="218.0" />
+      <Button layoutX="36.0" layoutY="31.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
