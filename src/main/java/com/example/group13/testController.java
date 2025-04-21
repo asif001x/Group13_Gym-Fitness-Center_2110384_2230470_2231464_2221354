@@ -3,6 +3,8 @@ package com.example.group13;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class testController
 {
     @javafx.fxml.FXML
@@ -37,7 +39,8 @@ public class testController
     }
 
     @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent actionEvent) {
+    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("login.fxml",actionEvent);
     }
 
     @javafx.fxml.FXML
