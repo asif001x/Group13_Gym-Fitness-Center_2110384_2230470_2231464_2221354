@@ -2,50 +2,61 @@ package asifur2110384;
 
 import com.example.group13.SceneSwitcher;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 import java.io.IOException;
 
-public class HiringprotionuserController
-{
-    @javafx.fxml.FXML
+public class HiringprotionuserController {
+
+    @FXML
     private Label outputLabel;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        outputLabel.setText("");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void currentempButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Showing current employees...");
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void newempButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Showing new employee applicants...");
     }
 
-    @javafx.fxml.FXML
-    public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("login.fxml", actionEvent);
-    }
-
-    @javafx.fxml.FXML
+    @FXML
     public void promotedButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Promoting selected employee...");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void notselectButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Applicant marked as not selected.");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void selectButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Applicant selected!");
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
+    public void FireButtonOnAction(ActionEvent actionEvent) {
+        outputLabel.setText("Employee marked for termination.");
+
+    }
+
+    @FXML
+    public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group13/login.fxml", actionEvent);
+    }
+
+    @FXML
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/asifur2110384/managerdashboard.fxml", actionEvent);
-    }
-
-    @javafx.fxml.FXML
-    public void FireButtonOnAction(ActionEvent actionEvent) {
     }
 }

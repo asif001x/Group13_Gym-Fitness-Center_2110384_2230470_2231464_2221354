@@ -22,5 +22,6 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Label fx:id="showLabel" layoutX="149.0" layoutY="356.0" prefHeight="17.0" prefWidth="267.0" />
    </children>
 </AnchorPane>
