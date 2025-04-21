@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rafi2231464.PlanMembership">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.PlanMembership">
    <children>
       <ComboBox layoutX="37.0" layoutY="125.0" prefWidth="150.0" promptText="Choose Plan" />
       <TextField layoutX="37.0" layoutY="71.0" promptText="Name" />

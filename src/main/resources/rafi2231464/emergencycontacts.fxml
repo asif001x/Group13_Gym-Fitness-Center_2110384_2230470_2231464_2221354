@@ -15,14 +15,14 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TableView layoutX="81.0" layoutY="157.0" prefHeight="200.0" prefWidth="405.0">
+      <TableView fx:id="tableViewFX" layoutX="81.0" layoutY="157.0" prefHeight="200.0" prefWidth="405.0">
         <columns>
-          <TableColumn prefWidth="199.99996948242188" text="Name" />
-          <TableColumn prefWidth="202.0" text="Phone Number" />
+          <TableColumn fx:id="nameTBC" prefWidth="199.99996948242188" text="Name" />
+          <TableColumn fx:id="phoneTBC" prefWidth="202.0" text="Phone Number" />
         </columns>
       </TableView>
-      <TextField layoutX="172.0" layoutY="68.0" />
-      <TextField layoutX="172.0" layoutY="110.0" />
+      <TextField fx:id="nameTF" layoutX="172.0" layoutY="68.0" />
+      <TextField fx:id="phoneTF" layoutX="172.0" layoutY="110.0" />
       <Label layoutX="95.0" layoutY="72.0" text="Name" />
       <Label layoutX="63.0" layoutY="114.0" text="Phone Number" />
       <Button layoutX="387.0" layoutY="89.0" mnemonicParsing="false" onAction="#updateOA" prefHeight="25.0" prefWidth="81.0" text="Update" />

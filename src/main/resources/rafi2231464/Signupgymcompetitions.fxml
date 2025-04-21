@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rafi2231464.Signupgymcompetitions">
+<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group13.rafi2231464.Signupgymcompetitions">
    <children>
       <TextField layoutX="103.0" layoutY="73.0" promptText="Name" />
       <TextField layoutX="103.0" layoutY="116.0" promptText="Phone" />

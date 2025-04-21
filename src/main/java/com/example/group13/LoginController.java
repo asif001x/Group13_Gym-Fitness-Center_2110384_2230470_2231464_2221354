@@ -2,7 +2,6 @@ package com.example.group13;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -16,8 +15,6 @@ public class LoginController
     private PasswordField passwordPasswordField;
     @javafx.fxml.FXML
     private TextField useridTextField;
-    @javafx.fxml.FXML
-    private Label showLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -65,7 +62,6 @@ public class LoginController
                 break;
             case "Security Officer":
                 if (userId.equals("security") && password.equals("security123")) {
-                    SceneSwitcher.switchTo("/asifur2110384/securitydashboard.fxml", actionEvent);
                     isAuthenticated = true;
                 }
                 break;
@@ -78,7 +74,6 @@ public class LoginController
         }
 
         if (!isAuthenticated) {
-            showLabel.setText("Incorrect username or password");
         }
     }
 
