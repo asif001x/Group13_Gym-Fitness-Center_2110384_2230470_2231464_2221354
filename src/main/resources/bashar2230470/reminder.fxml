@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bashar2230470.ReminderController">
+   <children>
+      <Label alignment="CENTER" layoutX="188.0" layoutY="34.0" prefHeight="18.0" prefWidth="206.0" text="Reminder">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="129.0" prefHeight="22.0" prefWidth="122.0" text="Reminder Date :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="206.0" prefHeight="18.0" prefWidth="122.0" text="Reminder Type :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="typeTextField" layoutX="228.0" layoutY="203.0" prefHeight="26.0" prefWidth="271.0" promptText="Select Type" />
+      <Button layoutX="207.0" layoutY="286.0" mnemonicParsing="false" onAction="#savereminderOnAction" prefHeight="26.0" prefWidth="186.0" text="Save Reminder">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="392.0" prefHeight="22.0" prefWidth="221.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="37.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateDatePicker" layoutX="226.0" layoutY="128.0" prefHeight="26.0" prefWidth="271.0" promptText="Select Date" />
+   </children>
+</AnchorPane>
