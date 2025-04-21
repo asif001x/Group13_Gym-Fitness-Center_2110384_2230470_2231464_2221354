@@ -1,8 +1,11 @@
 package asifur2110384;
 
+import com.example.group13.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+
+import java.io.IOException;
 
 public class ReportinganalyticsController
 {
@@ -32,6 +35,7 @@ public class ReportinganalyticsController
     }
 
     @javafx.fxml.FXML
-    public void BackButtonOnAction(ActionEvent actionEvent) {
+    public void BackButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/asifur2110384/managerdashboard.fxml", actionEvent);
     }
 }

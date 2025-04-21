@@ -23,7 +23,7 @@ public class LoginController
 
     @javafx.fxml.FXML
     public void loginButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/asifur2110384/classscheduling.fxml", actionEvent);
+        SceneSwitcher.switchTo("/asifur2110384/managerdashboard.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
