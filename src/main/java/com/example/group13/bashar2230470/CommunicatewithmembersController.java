@@ -26,4 +26,7 @@ public class CommunicatewithmembersController
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {
     }
+
+    public void sendOnAction(javafx.event.ActionEvent actionEvent) {
+    }
 }
