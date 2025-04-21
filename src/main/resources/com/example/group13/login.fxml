@@ -22,6 +22,5 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="435.0" layoutY="322.0" mnemonicParsing="false" onAction="#createaccountOnAction" prefHeight="35.0" prefWidth="127.0" text="Create Account" />
    </children>
 </AnchorPane>
